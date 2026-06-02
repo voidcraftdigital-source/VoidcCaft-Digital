@@ -54,6 +54,27 @@ body {
   max-width: 680px;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand__logo {
+  width: 3rem;
+  height: auto;
+}
+
+.brand span {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .eyebrow {
   display: inline-block;
   margin-bottom: 1rem;
@@ -160,6 +181,39 @@ h1 {
   margin-top: 0;
 }
 
+.price-card__price {
+  margin: 0.75rem 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.price-card__features {
+  margin: 1rem 0 0;
+  padding-left: 1.35rem;
+  color: var(--muted);
+}
+
+.price-card__features li {
+  margin-bottom: 0.65rem;
+}
+
+.section__header {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.section__header h2 {
+  margin: 0.5rem 0 0;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+}
+
+.section__copy {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  max-width: 44rem;
+}
+
 .section--testimonial {
   background: rgba(15, 23, 42, 0.9);
 }
@@ -223,6 +277,37 @@ h1 {
 .contact-form textarea {
   min-height: 160px;
   resize: vertical;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-card__quote {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.review-card__author {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.review-form {
+  align-self: start;
+}
+
+.review-form select {
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.92);
+  color: var(--text);
 }
 
 .footer {
